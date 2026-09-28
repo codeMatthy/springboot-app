@@ -59,6 +59,7 @@
         <m2e.apt.activation>jdt_apt</m2e.apt.activation>
         <mapstruct.version>1.1.0.Final</mapstruct.version>
         <maven-compiler-plugin.version>3.6.0</maven-compiler-plugin.version>
+        <maven-war-plugin.version>3.4.0</maven-war-plugin.version>
         <maven-enforcer-plugin.version>1.4.1</maven-enforcer-plugin.version>
         <maven-resources-plugin.version>3.0.1</maven-resources-plugin.version>
         <maven.build.timestamp.format>yyyyMMddHHmmss</maven.build.timestamp.format>
@@ -282,14 +283,13 @@
         </dependency>
         <dependency>
             <groupId>org.jetbrains.kotlin</groupId>
-    <artifactId>kotlin-stdlib</artifactId>
-    <version>${kotlin.version}</version>
-</dependency>
-
-<dependency>
-    <groupId>org.jetbrains.kotlin</groupId>
-    <artifactId>kotlin-reflect</artifactId>
-    <version>${kotlin.version}</version>
+            <artifactId>kotlin-stdlib</artifactId>
+            <version>${kotlin.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.jetbrains.kotlin</groupId>
+            <artifactId>kotlin-reflect</artifactId>
+            <version>${kotlin.version}</version>
         </dependency>
         <dependency>
             <groupId>com.fasterxml.jackson.module</groupId>
@@ -954,6 +954,7 @@
                     <plugin>
                         <groupId>org.apache.maven.plugins</groupId>
                         <artifactId>maven-war-plugin</artifactId>
+                       <version>${maven-war-plugin.version}</version>
                         <configuration>
                             <warSourceDirectory>src/main/webapp/</warSourceDirectory>
                         </configuration>
@@ -990,6 +991,7 @@
                     <plugin>
                         <groupId>org.apache.maven.plugins</groupId>
                         <artifactId>maven-war-plugin</artifactId>
+                       <version>${maven-war-plugin.version}</version>
                         <configuration>
                             <warSourceDirectory>target/www/</warSourceDirectory>
                         </configuration>
@@ -1090,6 +1092,7 @@
                     <plugin>
                         <groupId>org.apache.maven.plugins</groupId>
                         <artifactId>maven-war-plugin</artifactId>
+                       <version>${maven-war-plugin.version}</version>
                         <configuration>
                             <warSourceDirectory>src/main/webapp/</warSourceDirectory>
                         </configuration>
